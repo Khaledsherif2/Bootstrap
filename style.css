@@ -1,0 +1,204 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav {
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+}
+.nav .container .collapse ul li {
+  font-weight: 500;
+}
+.nav .container .collapse ul li:hover {
+  background-color: #ff8e80;
+  border-radius: 5px;
+}
+/* ////////////////////////////////////////////////// */
+.home {
+  background-color: #f0f0f0;
+}
+.home .container .row {
+  align-items: center;
+}
+.home .container .row .col h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.home .container .row .col button {
+  border: none;
+  outline: none;
+  background: linear-gradient(to right, #474e53e5 50%, #e74c3c 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  font-weight: 500;
+  transition: background-position 0.3s ease;
+}
+.home .container .row .col button:hover {
+  background-position: left bottom;
+}
+@media (max-width: 768px) {
+  .home .container .row {
+    flex-direction: column;
+  }
+  .home .container .row .left,
+  .home .container .row .right {
+    text-align: center;
+    padding: 20px;
+  }
+  .home .container .row .left h1 {
+    font-size: 2.5rem;
+  }
+  .home .container .row .left p {
+    font-size: 0.9rem;
+  }
+  .home .container .right img {
+    width: 50%;
+  }
+}
+/* /////////////////////////////////////////////////// */
+.products {
+  margin-top: 80px;
+}
+.products .container .row div:first-child {
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.card {
+  margin: 10px;
+  border: none;
+  text-align: center;
+  overflow: hidden;
+}
+.card p {
+  color: red; 
+}
+.card img {
+  transition: transform 0.3s ease;
+}
+.card img:hover {
+  transform: scale(1.06);
+}
+/* ////////////////////// */
+.gallery {
+  margin-top: 80px;
+}
+.gallery .container-fluid .row .card .left {
+  width: 97% ;
+}
+@media (max-width: 992px) {
+  .gallery .container-fluid .row .card .left {
+    width: 142%;
+  }
+}
+/* /////////////////////////////////////// */
+.popular-items {
+  margin-top: 80px;
+}
+.popular-items .container > div h3 {
+  font-size: 3.3rem;
+}
+.popular-items .container .row .card {
+  margin: 0;
+}
+.popular-items .container .row .card-body {
+  position: relative;
+  border-bottom: 4px solid red;
+}
+.popular-items .container .row .card-body > button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0;
+  color: white;
+  font-size: 20px;
+}
+.popular-items .container .row .card:hover + .card-body > button {
+  display: block;
+}
+/* ///////////////////////////////////////////// */
+.section {
+  margin-top: 80px;
+}
+.section .container .row .right img,
+.section .container .row .left img {
+  width: 80%;
+}
+.section .container .row {
+  align-items: center;
+}
+.section .container .row .col h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.section .container .row .col button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .section .container .row .right img,
+  .section .container .row .left img {
+  width: 100%;
+  }
+  .section .container .row .col h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .section .container .row .col p {
+    display: none;
+  }
+  .section .container .row .col button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+    font-weight: 500;
+  }
+}
+/* ////////////////////////////// */
+.more {
+  margin-top: 80px;
+  background-color: red;
+  color: white;
+}
+/* //////////////////////////////////// */
+.footer {
+  margin-top: 80px;
+}
+.footer .container .row p {
+  margin-top: 15px;
+  color: rgba(136, 133, 133, 0.897);
+}
+.footer .container .row ul,
+.footer .container .row a {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(136, 133, 133, 0.897);
+  padding: 0;
+  margin: 3px;
+}
+.footer .container .icons {
+  margin-top: 40px;
+}
+.footer .container .icons .copy {
+  color: rgba(136, 133, 133, 0.897);
+}
+.footer .container .icons .copy span {
+  color: red;
+}
+.footer .container .icons i {
+  margin: 5px;
+}
